@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+.cartao{
+    height: 12rem;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.conteudo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cartao:hover .conteudo{
+    transform: rotateY(180deg);
+}
+
+.pergunta, .resposta{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    backface-visibility: hidden;
+}
+
+.resposta{
+    transform: rotateY(180deg);
+}
+
+h3{
+    backface-visibility: hidden;
+}
