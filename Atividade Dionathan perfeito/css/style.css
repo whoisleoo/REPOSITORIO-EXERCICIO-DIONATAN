@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --btn-background: #e0e0e0;
+  --btn-color: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; 
+
+}
+
+body.dark {
+  --bg-color: #000;
+  --text-color: #f0f0f0;
+  --btn-background: #191919;
+  --btn-color: #f0f0f0;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: var(--btn-background);
+  color: var(--btn-color);
+  border-radius: 20px;
+  border: 0px
+}
+
+.botoes {
+  margin-top: 20px;
+}
+
+.concluido {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
