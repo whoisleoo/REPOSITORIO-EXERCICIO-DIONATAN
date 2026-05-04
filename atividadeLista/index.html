@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-dark text-white text-center">
+          <h1 class="mb-0">lista horrivel</h1>
+        </div>
+  
+        <div class="card-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-12">
+              <input 
+                type="text" 
+                class="form-control formInput" 
+                placeholder="Escreva sua anotação aqui."
+              >
+            </div>
+  
+            <div class="col-md-3">
+              <button class="btn btn-dark w-100 submit">
+                + Adicionar Final
+              </button>
+            </div>
+  
+            <div class="col-md-3">
+              <button class="btn btn-dark w-100 addFirst">
+                + Adicionar Início
+              </button>
+            </div>
+  
+            <div class="col-md-3">
+              <button class="btn btn-danger w-100 removeLast">
+                X Remover Último
+              </button>
+            </div>
+  
+            <div class="col-md-3">
+              <button class="btn btn-danger w-100 removeFirst">
+                X Remover Primeiro
+              </button>
+            </div>
+  
+            <div class="col-md-4">
+              <label for="pet-select" class="form-label fw-bold">Filtro:</label>
+              <select class="form-select selectBox" id="pet-select">
+                <option value="normal">Normal</option>
+                <option value="greaterThan">Maior que 5</option>
+                <option value="uppercase">Maiúsculo</option>
+              </select>
+            </div>
+          </div>
+  
+          <hr>
+  
+          <div class="mt-4">
+            <h2 class="text-secondary">Lista abaixo:</h2>
+            <p class="letterCounter badge bg-dark"></p>
+  
+            <ul class="list-group mt-3"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+<script src="script.js"></script>
+</html>
